@@ -18,12 +18,10 @@ public class DepartmentController {
         this.departmentServ = departmentServ;
     }
 
-
-
     @PostMapping
     public ResponseEntity<String>createDepartment(@RequestBody Department department){
         departmentServ.createDepartment(department);
-        return ResponseEntity.ok("Done");
+       return ResponseEntity.ok("Done");
     }
 
 }
