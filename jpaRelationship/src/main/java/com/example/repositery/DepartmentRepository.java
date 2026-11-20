@@ -1,5 +1,4 @@
 package com.example.repositery;
-
 import com.example.entity.Department;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -18,6 +17,4 @@ public class DepartmentRepository {
     public  Department getDepartmentById(Long id){
        return  entityManager.find(Department.class , id);
     }
-
-
 }
